@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <navigation-rule>
+        <from-view-id>/newDogovor.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>dogovor</from-outcome>
+            <to-view-id>/agentDogovors.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <managed-bean>
+        <managed-bean-name>UserBean</managed-bean-name>
+        <managed-bean-class>ManageBeans.UserBean</managed-bean-class>
+         <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>DogovorBean</managed-bean-name>
+        <managed-bean-class>ManageBeans.DogovorBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>logindBean</managed-bean-name>
+        <managed-bean-class>ManageBeans.LogindBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope></managed-bean>
+    <managed-bean>
+        <managed-bean-name>loginBean</managed-bean-name>
+        <managed-bean-class>ManageBeans.LoginBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope></managed-bean>
+    <navigation-rule>
+        <from-view-id>/addZayvka.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>zayvka</from-outcome>
+            <to-view-id>/clientZayvka.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/addUsluga.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>usluga</from-outcome>
+            <to-view-id>/adminUsluga.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>
